@@ -1,2 +1,2 @@
 # angular
-Angular v.15 code examples
+Angular code examples
