@@ -7,6 +7,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { FirstDirectiveComponent } from './first-directive/first-directive.component';
 import { ParentPassingChildComponent } from './parent-passing-child/parent.component';
 import { ChildComponent } from './parent-passing-child/child.component';
+import { WrappedComponent } from './wrapped/wrapped.component';
+import { HelloComponentComponent } from './hello-component/hello-component.component';
+import { HttpClientModule } from '@angular/common/http'
+import { CallApiComponent } from './call-api/call-api.component';
+
+
 
 @NgModule({
   declarations: [
@@ -14,11 +20,15 @@ import { ChildComponent } from './parent-passing-child/child.component';
     HighlightDirective,
     FirstDirectiveComponent,
     ParentPassingChildComponent,
-    ChildComponent
+    ChildComponent,
+    WrappedComponent,
+    HelloComponentComponent,
+    CallApiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [], // here inject all the services 
   bootstrap: [AppComponent]
